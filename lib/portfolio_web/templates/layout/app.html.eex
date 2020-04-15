@@ -31,7 +31,7 @@
 			</div>
 		</nav>
 
-    <main role="main" class="container">
+    <main role="main">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
@@ -39,6 +39,14 @@
       <%= render @view_module, @view_template, assigns %>
 
     </main>
+
+		<footer class="page-footer teal">
+			<div class="footer-copyright">
+				<div class="container">
+					<span>COPYRIGHT </span><i class="material-icons">copyright</i><span> DAN ZERA 2020 | ALL RIGHTS RESERVED</span>
+				</div>
+			</div>
+		</footer>
 
 		<!-- SCRIPTS-->
 		<!-- jQuery -->

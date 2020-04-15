@@ -1,3 +1,35 @@
 /* This file is the main application css. */
 /* Files can be segmented and imported like so */
 @import "./parallax.css";
+
+/* NAV BAR */
+.nav-wrapper.container a.brand-logo {
+	transition: background-color .3s;
+}
+
+.nav-wrapper.container a.brand-logo:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.nav-wrapper.container i.material-icons {
+	font-size: 2.5rem;
+	margin-left: 15px;
+}
+
+.nav-wrapper.container ul.right a {
+	font-size: 1.25rem;
+}
+
+/* FLASH MESSAGE ALERTS */
+p.alert {
+	margin: 0 auto;
+}
+
+/* FOOTER */
+footer.page-footer {
+	padding: 0;
+}
+
+.footer-copyright .container > * {
+	vertical-align: middle;
+}
