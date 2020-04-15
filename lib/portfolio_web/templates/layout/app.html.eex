@@ -4,23 +4,33 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title><%= assigns[:page_title] || "Portfolio · Phoenix Framework" %></title>
+    <title><%= assigns[:page_title] || "Dan Zera · Web Developer" %></title>
+
+		<!-- CSS IMPORTS -->
+		<!-- Materialize CSS and Material Icons Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Custom CSS -->
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+
     <%= csrf_meta_tag() %>
   </head>
   <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-          </ul>
-        </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
+		<!-- NAV BAR -->
+		<nav class="white" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="/" class="brand-logo"><i class="material-icons">home</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="/about">About</a></li>
+				</ul>
+
+				<ul id="nav-mobile" class="sidenav">
+					<li><a href="/about">About</a></li>
+				</ul>
+				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
@@ -29,6 +39,13 @@
       <%= render @view_module, @view_template, assigns %>
 
     </main>
+
+		<!-- SCRIPTS-->
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<!-- Materialize JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<!-- Custom Scripts-->
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
