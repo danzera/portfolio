@@ -1,6 +1,7 @@
 /* This file is the main application css. */
 /* Files can be segmented and imported like so */
 @import "./parallax.css";
+@import "./home.css";
 
 /* NAV BAR */
 .nav-wrapper.container a.brand-logo {

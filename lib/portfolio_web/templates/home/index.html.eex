@@ -1,98 +1,68 @@
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
+<div class="container">
 
-      </div>
-    </div>
-    <div class="parallax">
-			<img src="<%= Routes.static_path(@conn, "/images/background1.jpg") %>" alt="Unsplashed background img 1"/>
+	<%# ABOUT ME - ONE MAIN ROW WITH TWO COLUMNS %>
+	<div class="row about-me">
+		<%# COLUMN 1. HEADSHOT, LINKEDIN, GITHUB %>
+		<div class="col s12 m12 l6">
+			<div class="row">
+				<div class="col s12">
+					<img class="headshot" src="<%= Routes.static_path(@conn, "/images/headshot_square.jpg") %>" alt="Dan Headshot"/>
+				</div>
+			</div>
+			<div class="row social-links">
+				<div class="col s6 linkedin-col">
+					<a href="https://www.linkedin.com/in/danzera/" target="_blank">
+						<img class="linkedin" src="<%= Routes.static_path(@conn, "/images/linkedin.png") %>" alt="LinkedIn Logo"/>
+					</a>
+				</div>
+				<div class="col s6 github-col">
+					<a href="https://github.com/danzera" target="_blank">
+						<img class="github" src="<%= Routes.static_path(@conn, "/images/github.png") %>" alt="LinkedIn Logo"/>
+					</a>
+				</div>
+			</div>
 		</div>
-  </div>
 
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax">
-			<img src="<%= Routes.static_path(@conn, "/images/background2.jpg") %>" alt="Unsplashed background img 2"/>
+		<%# COLUMN 2. PERSONAL BLURB %>
+		<div class="col s12 m12 l6">
+			<h4>Dan Zera</h4>
+			<div class="divider"></div>
+			<p>Hey, there. I'm Dan. Web developer, business consulting professional and teacher based in Portland, Oregon. I enjoy finding technology solutions that help people solve business problems. I also like photography and hiking.</p>
+			<div class="divider"></div>
+			<p>For the past three years I've been working a full stack software engineer. I have experience working with JavaScript, HTML, CSS, PHP/Laravel, Node.js, Elixir/Phoenix, SQL and AWS, to a name drop a few current web technologies. I'm currently available for new opportunities. Please feel free to contact me on LinkedIn, and check out my GitHub profile to see what I've been working on lately. Thanks for stopping by.</p>
 		</div>
-  </div>
 
-  <div class="container">
-    <div class="section">
+	</div> <%# CLOSE ABOUT ME ROW DIV %>
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
+	<div class="divider"></div>
 
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax">
-			<img src="<%= Routes.static_path(@conn, "/images/background3.jpg") %>" alt="Unsplashed background img 3"/>
+	<%# ABOUT THE SITE %>
+	<div class="row about-this-site">
+		<div class="col s12">
+			<p>
+				I built this site using the Phoenix framework and Materialize CSS. Both are fantastic resources and I highly recommend them.
+				The <a href="https://hexdocs.pm/phoenix/overview.html#content">Phoenix documentation</a> is incredibly robust and their guides are a great place to start if you're looking to create a site of your own.
+				If you're really curious about my implementation of these techonologies, the source code for this site is located <a href="https://github.com/danzera/portfolio">here</a> on GitHub.
+				Please feel free to reach out via LinkedIn if you have any questions.
+			</p>
+			<div class="vendor-links">
+				
+			</div>
 		</div>
-  </div>
+	</div> <%# CLOSE ABOUT THIS SITE ROW DIV %>
+
+	<div class="row vendor-links">
+		<div class="col s12 m6 l4">
+			<a href="https://www.phoenixframework.org/">
+				<img class="phoenix-logo" src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
+			</a>
+		</div>
+		<div class="col s12 m6 l4">
+			<a href="https://materializecss.com/">
+				<img class="materialize-logo" src="<%= Routes.static_path(@conn, "/images/materialize.svg") %>" alt="Materialize CSS Logo"/>
+				<span class="materialize-text">Materialize</span>
+			</a>
+		</div>
+	</div> <%# CLOSE VENDOR LINKS ROW DIV %>
+
+</div> <%# CLOSE PAGE CONTAINER DIV %>

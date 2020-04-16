@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+		<!-- Ensure site has no horizontal scroll -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <title><%= assigns[:page_title] || "Dan Zera · Web Developer" %></title>
 
 		<!-- CSS IMPORTS -->
@@ -17,7 +20,7 @@
   </head>
   <body>
 		<!-- NAV BAR -->
-		<nav class="white" role="navigation">
+		<nav class="blue lighten-1" role="navigation">
 			<div class="nav-wrapper container">
 				<a id="logo-container" href="/" class="brand-logo"><i class="material-icons">home</i></a>
 				<ul class="right hide-on-med-and-down">
@@ -40,7 +43,7 @@
 
     </main>
 
-		<footer class="page-footer teal">
+		<footer class="page-footer blue lighten-1">
 			<div class="footer-copyright">
 				<div class="container">
 					<span>COPYRIGHT </span><i class="material-icons">copyright</i><span> DAN ZERA 2020 | ALL RIGHTS RESERVED</span>

@@ -1,0 +1,66 @@
+.row.about-me {
+	margin-bottom: 0;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.about-me img {
+	height: 300px;
+	width: 300px;
+	border-radius: 5px;
+}
+
+.about-me h4 {
+	margin-top: 0;
+}
+
+.about-me p {
+	text-align: left;
+}
+
+.social-links .linkedin-col {
+	padding: 0;
+	text-align: right;
+}
+
+.social-links .github-col {
+	text-align: left;
+}
+
+img.linkedin, img.github {
+	height: 50px;
+	width: auto;
+}
+
+.row.about-this-site {
+	margin-bottom: 0;
+}
+
+.vendor-links a > * {
+	vertical-align: middle;
+}
+
+.phoenix-logo, .materialize-logo {
+	height: 30px;
+	margin: 10px;
+}
+
+/* MEDIUM SCREEN AND SMALLER */
+@media only screen and (max-width : 992px) {
+	nav .nav-wrapper .brand-logo {
+		float: right;
+		position: static;
+	}
+}
+
+/* SMALL SCREEN */
+@media only screen and (max-width : 600px) {
+	.vendor-links .col {
+		text-align: center;
+	}
+}
+
+.materialize-text {
+	font-size: 20px;
+	color: #ee6e73;
+}
