@@ -27,9 +27,19 @@
 		<div class="col s12 m12 l6">
 			<h4>Dan Zera</h4>
 			<div class="divider"></div>
-			<p>Hey, there. I'm Dan. Web developer, business consulting professional and teacher based in Portland, Oregon. I enjoy finding technology solutions that help people solve business problems. I also like photography and hiking.</p>
+			<p>
+				Hey, there. I'm Dan. Software engineer, business consulting professional and teacher based in Portland, Oregon.
+				I enjoy helping people solve problems with technology solutions.
+				I also like photography and hiking.
+			</p>
 			<div class="divider"></div>
-			<p>For the past three years I've been working a full stack software engineer. I have experience working with JavaScript, HTML, CSS, PHP/Laravel, Node.js, Elixir/Phoenix, SQL and AWS, to a name drop a few current web technologies. I'm currently available for new opportunities. Please feel free to contact me on LinkedIn, and check out my GitHub profile to see what I've been working on lately. Thanks for stopping by.</p>
+			<p>
+				For the past three years I've been working as a full stack web developer.
+				I have experience working with JavaScript, HTML, CSS, PHP/Laravel, Node.js, Elixir/Phoenix, SQL and AWS, to a name drop a few current web technologies.
+				I'm currently available for new opportunities.
+				Please feel free to contact me on LinkedIn, and check out my GitHub profile to see what I've been working on lately.
+				Thanks for stopping by.
+			</p>
 		</div>
 
 	</div> <%# CLOSE ABOUT ME ROW DIV %>
@@ -41,7 +51,7 @@
 		<div class="col s12">
 			<p>
 				I built this site using the Phoenix framework and Materialize CSS. Both are fantastic resources and I highly recommend them.
-				The <a href="https://hexdocs.pm/phoenix/overview.html#content">Phoenix documentation</a> is incredibly robust and their guides are a great place to start if you're looking to create a site of your own.
+				The <a href="https://hexdocs.pm/phoenix/overview.html#content">Phoenix documentation</a> is incredibly robust and their guides are a great place to start if you're looking to create a web application of your own.
 				If you're really curious about my implementation of these techonologies, the source code for this site is located <a href="https://github.com/danzera/portfolio">here</a> on GitHub.
 				Please feel free to reach out via LinkedIn if you have any questions.
 			</p>
