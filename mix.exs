@@ -10,7 +10,17 @@ defmodule Portfolio.MixProject do
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+			deps: deps()
+			# EXAMPLE RELEASE CONFIGURATION
+			# CAN SPECIFY MULTIPLE RELEASES
+			#  - THE KEY IS THE RELEASE_NAME ("demo" in this example)
+			#  - THE VALUE IS A KEYWORD LIST SPECIFYING THE RELEASE CONFIRGURATION DETAILS
+			# releases: [
+			# 	demo: [
+			# 		include_executables_for: [:unix],
+			# 		applications: [runtime_tools: :permanent]
+			# 	]
+			# ]
     ]
   end
 
