@@ -10,14 +10,14 @@
 				</div>
 			</div>
 			<div class="row social-links">
-				<div class="col s6 linkedin-col">
-					<a href="https://www.linkedin.com/in/danzera/" target="_blank">
-						<img class="linkedin" src="<%= Routes.static_path(@conn, "/images/linkedin.png") %>" alt="LinkedIn Logo"/>
-					</a>
-				</div>
 				<div class="col s6 github-col">
 					<a href="https://github.com/danzera" target="_blank">
 						<img class="github" src="<%= Routes.static_path(@conn, "/images/github.png") %>" alt="LinkedIn Logo"/>
+					</a>
+				</div>
+				<div class="col s6 linkedin-col">
+					<a href="https://www.linkedin.com/in/danzera/" target="_blank">
+						<img class="linkedin" src="<%= Routes.static_path(@conn, "/images/linkedin.png") %>" alt="LinkedIn Logo"/>
 					</a>
 				</div>
 			</div>
