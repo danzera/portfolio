@@ -4,7 +4,7 @@
 	text-align: center;
 }
 
-.about-me img {
+.about-me .headshot {
 	height: 300px;
 	width: 300px;
 	border-radius: 5px;
