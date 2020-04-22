@@ -4,6 +4,12 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
+		<meta name="title" property="og:title" content="<%= assigns[:page_title] || "Dan Zera · Software Engineer" %>">
+		<meta property="og:type" content="website" />
+		<meta name="image" property="og:image" content="<%= Routes.static_path(@conn, "/images/headshot_square.jpg") %>">
+		<meta name="description" property="og:description" content="Personal website for Dan Zera, full stack software engineer.">
+		<meta name="author" content="Dan Zera">
+		<meta property="og:url" content="https://www.dzign.dev" />
 		<!-- Ensure site has no horizontal scroll -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
