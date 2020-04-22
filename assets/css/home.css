@@ -40,9 +40,15 @@ img.linkedin, img.github {
 	vertical-align: middle;
 }
 
-.phoenix-logo, .materialize-logo {
+.phoenix-logo,
+.materialize-logo,
+.heroku-logo {
 	height: 30px;
-	margin: 10px;
+}
+
+.materialize-text {
+	font-size: 20px;
+	color: #ee6e73;
 }
 
 /* MEDIUM SCREEN AND SMALLER */
@@ -51,16 +57,17 @@ img.linkedin, img.github {
 		float: right;
 		position: static;
 	}
+
+	.vendor-links .col {
+		text-align: center;
+	}
+
+	.materialize-col, .heroku-col {
+		margin-top: 15px;
+	}
 }
 
 /* SMALL SCREEN */
 @media only screen and (max-width : 600px) {
-	.vendor-links .col {
-		text-align: center;
-	}
-}
-
-.materialize-text {
-	font-size: 20px;
-	color: #ee6e73;
+	
 }

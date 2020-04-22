@@ -7,7 +7,7 @@
 		<!-- Ensure site has no horizontal scroll -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title><%= assigns[:page_title] || "Dan Zera · Web Developer" %></title>
+    <title><%= assigns[:page_title] || "Dan Zera · Software Engineer" %></title>
 
 		<!-- CSS IMPORTS -->
 		<!-- Materialize CSS and Material Icons Font -->
@@ -46,7 +46,7 @@
 		<footer class="page-footer blue lighten-1">
 			<div class="footer-copyright">
 				<div class="container">
-					<span>COPYRIGHT </span><i class="material-icons">copyright</i><span> DAN ZERA 2020 | ALL RIGHTS RESERVED</span>
+					<i class="material-icons">copyright</i><span> DAN ZERA 2020 | ALL RIGHTS RESERVED</span>
 				</div>
 			</div>
 		</footer>

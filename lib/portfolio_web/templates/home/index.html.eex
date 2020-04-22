@@ -35,9 +35,9 @@
 			<div class="divider"></div>
 			<p>
 				For the past three years I've been working as a full stack web developer.
-				I have experience working with JavaScript, HTML, CSS, PHP/Laravel, Node.js, Elixir/Phoenix, SQL and AWS, to name a few current web technologies.
+				I have experience working with JavaScript, HTML, CSS, PHP/Laravel, Node.js, Elixir/Phoenix, SQL and AWS, to name a few web technologies.
 				I'm currently available for new opportunities.
-				Please feel free to contact me on LinkedIn, and check out my GitHub profile to see what I've been working on lately.
+				Please feel free to email me at <a class="email-address">dan[at]dzign.dev</a> or connect with me on <a href="https://www.linkedin.com/in/danzera/" target="_blank">LinkedIn</a>, and check out my <a href="https://github.com/danzera" target="_blank">GitHub</a> profile to see what I've been working on lately.
 				Thanks for stopping by.
 			</p>
 		</div>
@@ -50,10 +50,10 @@
 	<div class="row about-this-site">
 		<div class="col s12">
 			<p>
-				I built this site using the Phoenix framework and Materialize CSS. Both are fantastic resources and I highly recommend them.
-				The <a href="https://hexdocs.pm/phoenix/overview.html#content">Phoenix documentation</a> is incredibly robust and their guides are a great place to start if you're looking to create a web application of your own.
-				If you're really curious about my implementation of these techonologies, the source code for this site is located <a href="https://github.com/danzera/portfolio">here</a> on GitHub.
-				Please feel free to reach out via LinkedIn if you have any questions.
+				I built this site using the Phoenix framework, Materialize CSS and Heroku. All are fantastic resources and I highly recommend them.
+				The <a href="https://hexdocs.pm/phoenix/overview.html#content" target="_blank">Phoenix documentation</a> is incredibly robust and their guides are a great place to start if you're looking to create a web application of your own.
+				If you're really curious about my implementation of these techonologies, the source code for this site is located <a href="https://github.com/danzera/portfolio" target="_blank">here</a> on GitHub.
+				Please feel free to reach out if you have any questions.
 			</p>
 			<div class="vendor-links">
 				
@@ -62,15 +62,20 @@
 	</div> <%# CLOSE ABOUT THIS SITE ROW DIV %>
 
 	<div class="row vendor-links">
-		<div class="col s12 m6 l4">
-			<a href="https://www.phoenixframework.org/">
+		<div class="col s12 m12 l4 phoenix-col">
+			<a href="https://www.phoenixframework.org/" target="_blank">
 				<img class="phoenix-logo" src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
 			</a>
 		</div>
-		<div class="col s12 m6 l4">
-			<a href="https://materializecss.com/">
+		<div class="col s12 m6 l4 materialize-col">
+			<a href="https://materializecss.com/" target="_blank">
 				<img class="materialize-logo" src="<%= Routes.static_path(@conn, "/images/materialize.svg") %>" alt="Materialize CSS Logo"/>
 				<span class="materialize-text">Materialize</span>
+			</a>
+		</div>
+		<div class="col s12 m6 l4 heroku-col">
+			<a href="https://www.heroku.com/" target="_blank">
+				<img class="heroku-logo" src="<%= Routes.static_path(@conn, "/images/heroku.svg") %>" alt="Heroku Logo"/>
 			</a>
 		</div>
 	</div> <%# CLOSE VENDOR LINKS ROW DIV %>
