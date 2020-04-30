@@ -26,6 +26,17 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+# Email configuration
+config :portfolio, MyApp.Mailer,
+  adapter: Bamboo.SMTPAdapter,
+  server: "smtp.domain",
+  port: 1025,
+  username: SYSTEM.get_env("SMTP_USERNAME"),
+  password: SYSTEM.get_env("SMTP_PASSWORD"),
+  tls: :if_available, # can be `:always` or `:never`
+  ssl: false, # can be `true`
+  retries: 1
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
